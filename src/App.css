@@ -27,7 +27,7 @@
 .step-card--compact .step-copy { border-bottom: 0; padding-bottom: 12px; }
 .step-card--compact .step-fields { width: min(100%, 470px); padding-top: 0; }
 .diagram-frame { align-self: stretch; min-width: 0; min-height: 285px; margin: 0; padding: 26px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #edf0f4; background-color: #f8fafc; background-image: linear-gradient(#edf1f5 1px, transparent 1px), linear-gradient(90deg, #edf1f5 1px, transparent 1px); background-size: 22px 22px; }
-.diagram-frame img { display: block; width: 100%; height: 235px; object-fit: contain; object-position: center; filter: drop-shadow(0 8px 13px rgba(23,32,51,.08)); }
+.diagram-frame img { display: block; width: min(92%, 680px); height: auto; max-height: 235px; object-fit: contain; object-position: center; filter: drop-shadow(0 8px 13px rgba(23,32,51,.08)); }
 .step-fields { width: 100%; padding: 28px; }
 
 .field, .field-pair { width: 100%; }
@@ -97,7 +97,7 @@ footer a { justify-self: end; color: var(--accent); font-weight: 800; text-decor
 .save-dialog h2 { margin-bottom: 24px; }
 .dialog-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 24px; }
 
-@media (max-width: 760px) {
+@media (max-width: 940px) {
   .header-inner, .page-shell { width: min(100% - 24px, 1040px); }
   .header-inner { height: 68px; }
   .brand-icon { width: 50px; height: 50px; }
@@ -113,7 +113,7 @@ footer a { justify-self: end; color: var(--accent); font-weight: 800; text-decor
   .step-copy h2 { font-size: 19px; }
   .step-body { grid-template-columns: 1fr; min-height: 0; }
   .diagram-frame { min-height: 0; height: 230px; padding: 18px; border-right: 0; border-bottom: 1px solid #edf0f4; }
-  .diagram-frame img { width: 100%; height: 194px; max-width: 100%; object-fit: contain; }
+  .diagram-frame img { width: min(94%, 680px); height: auto; max-height: 194px; object-fit: contain; }
   .step-fields { padding: 20px 18px; }
   .field-pair { grid-template-columns: 1fr; }
   .field-pair .field + .field { margin-top: 4px; }
