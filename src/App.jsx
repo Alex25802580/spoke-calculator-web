@@ -180,24 +180,19 @@ function App() {
 
   return (
     <main>
-      <header className="site-header">
-        <div className="header-inner">
-          <div className="brand-lockup">
-            <img className="brand-wordmark" src="/assets/brand-wordmark.png" alt="Spoke Calculator" />
-            <img className="brand-icon" src="/assets/brand-hub.png" alt="" />
-          </div>
-          <button className="saved-trigger" type="button" onClick={() => setShowSaved(true)}>
-            <span>Saved wheels</span>
-            <strong>{savedWheels.length}</strong>
-          </button>
-        </div>
-      </header>
+      <div className="top-actions">
+        <button className="saved-trigger" type="button" onClick={() => setShowSaved(true)}>
+          <span>Saved wheels</span>
+          <strong>{savedWheels.length}</strong>
+        </button>
+      </div>
 
       <div className="page-shell">
         <section className="calculator-intro">
-          <div>
-            <span className="eyebrow">Wheel building calculator</span>
-            <h1>Spoke length calculator</h1>
+          <div className="intro-brand">
+            <h1 className="sr-only">Spoke length calculator</h1>
+            <img className="brand-wordmark" src="/assets/brand-wordmark.png" alt="Spoke Calculator" />
+            <img className="brand-icon" src="/assets/brand-hub.png" alt="" />
           </div>
           <p>
             <span>Enter your rim and hub measurements.</span>

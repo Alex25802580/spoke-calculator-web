@@ -1,16 +1,16 @@
 :root { --ink: #172033; --muted: #677185; --line: #dfe4eb; --paper: #fff; --accent: #264ba7; --accent-dark: #17357d; --soft: #edf2ff; }
 
-.site-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid rgba(223,228,235,.9); background: rgba(255,255,255,.92); backdrop-filter: blur(14px); }
-.header-inner { position: relative; width: min(1120px, calc(100% - 40px)); height: 112px; margin: auto; display: flex; align-items: center; justify-content: flex-end; gap: 24px; }
-.brand-lockup { position: absolute; left: 50%; top: 50%; display: flex; flex-direction: column; align-items: center; gap: 10px; min-width: 0; transform: translate(-50%, -50%); }
-.brand-icon { display: block; width: 68px; height: auto; object-fit: contain; filter: brightness(0); }
-.brand-wordmark { display: block; width: 118px; height: auto; object-fit: contain; }
+.top-actions { width: min(1040px, calc(100% - 40px)); margin: 0 auto; padding-top: 24px; display: flex; justify-content: flex-end; }
+.intro-brand { display: flex; flex-direction: column; align-items: center; gap: 14px; flex: 0 0 auto; }
+.brand-icon { display: block; width: 120px; height: auto; object-fit: contain; filter: brightness(0); }
+.brand-wordmark { display: block; width: 220px; height: auto; object-fit: contain; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .saved-trigger { display: flex; align-items: center; gap: 12px; min-height: 42px; padding: 7px 8px 7px 16px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: var(--paper); font-weight: 700; cursor: pointer; }
 .saved-trigger strong { display: grid; place-items: center; min-width: 28px; height: 28px; padding: 0 7px; border-radius: 99px; color: white; background: var(--accent); font-size: 13px; }
 
-.page-shell { width: min(1040px, calc(100% - 40px)); margin: auto; padding: 42px 0 36px; }
+.page-shell { width: min(1040px, calc(100% - 40px)); margin: auto; padding: 18px 0 36px; }
 .eyebrow { display: block; margin-bottom: 13px; color: var(--accent); font-size: 12px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
-.calculator-intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 35px; padding: 0 4px 24px; }
+.calculator-intro { display: flex; align-items: center; justify-content: space-between; gap: 48px; padding: 0 4px 32px; }
 .calculator-intro .eyebrow { margin-bottom: 7px; }
 .calculator-intro h1 { margin: 0; color: #101827; font-size: clamp(30px, 4vw, 42px); line-height: 1.05; letter-spacing: -.04em; }
 .calculator-intro p { max-width: 400px; margin: 0 0 2px; color: var(--muted); font-size: 14px; line-height: 1.55; text-align: right; }
@@ -98,17 +98,14 @@ footer a { justify-self: end; color: var(--accent); font-weight: 800; text-decor
 .dialog-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 24px; }
 
 @media (max-width: 940px) {
-  .header-inner, .page-shell { width: min(100% - 24px, 1040px); }
-  .header-inner { height: 100px; }
-  .brand-lockup { gap: 8px; }
-  .brand-icon { width: 58px; height: auto; }
-  .brand-wordmark { width: 101px; height: auto; }
-  .saved-trigger span { display: none; }
-  .saved-trigger { padding: 5px; border: 0; }
-  .page-shell { padding-top: 28px; }
-  .calculator-intro { align-items: flex-start; flex-direction: column; gap: 9px; padding-bottom: 20px; }
-  .calculator-intro h1 { font-size: 31px; }
-  .calculator-intro p { max-width: none; text-align: left; }
+  .top-actions, .page-shell { width: min(100% - 24px, 1040px); }
+  .top-actions { padding-top: 16px; }
+  .page-shell { padding-top: 16px; }
+  .intro-brand { align-self: center; gap: 12px; }
+  .brand-icon { width: 92px; }
+  .brand-wordmark { width: 170px; }
+  .calculator-intro { align-items: center; flex-direction: column; gap: 20px; padding-bottom: 24px; }
+  .calculator-intro p { max-width: none; text-align: center; }
   .step-copy { padding: 20px 18px 16px; }
   .step-copy h2 { font-size: 19px; }
   .step-body { grid-template-columns: 1fr; min-height: 0; }
