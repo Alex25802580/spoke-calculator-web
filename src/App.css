@@ -1,20 +1,18 @@
 :root { --ink: #172033; --muted: #677185; --line: #dfe4eb; --paper: #fff; --accent: #264ba7; --accent-dark: #17357d; --soft: #edf2ff; }
 
 .top-actions { width: min(1040px, calc(100% - 40px)); margin: 0 auto; padding-top: 24px; display: flex; justify-content: flex-end; }
-.intro-brand { display: flex; flex-direction: column; align-items: center; gap: 14px; flex: 0 0 auto; }
-.brand-icon { display: block; width: 120px; height: auto; object-fit: contain; filter: brightness(0); }
-.brand-wordmark { display: block; width: 220px; height: auto; object-fit: contain; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .saved-trigger { display: flex; align-items: center; gap: 12px; min-height: 42px; padding: 7px 8px 7px 16px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: var(--paper); font-weight: 700; cursor: pointer; }
 .saved-trigger strong { display: grid; place-items: center; min-width: 28px; height: 28px; padding: 0 7px; border-radius: 99px; color: white; background: var(--accent); font-size: 13px; }
 
-.page-shell { width: min(1040px, calc(100% - 40px)); margin: auto; padding: 18px 0 36px; }
+.page-shell { width: min(1040px, calc(100% - 40px)); margin: auto; padding: 10px 0 36px; }
 .eyebrow { display: block; margin-bottom: 13px; color: var(--accent); font-size: 12px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
-.calculator-intro { display: flex; align-items: center; justify-content: space-between; gap: 48px; padding: 0 4px 32px; }
-.calculator-intro .eyebrow { margin-bottom: 7px; }
-.calculator-intro h1 { margin: 0; color: #101827; font-size: clamp(30px, 4vw, 42px); line-height: 1.05; letter-spacing: -.04em; }
-.calculator-intro p { max-width: 400px; margin: 0 0 2px; color: var(--muted); font-size: 14px; line-height: 1.55; text-align: right; }
-.calculator-intro p span { display: block; }
+.calculator-intro { display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 0 4px 30px; text-align: center; }
+.intro-copy { display: flex; flex-direction: column; align-items: center; }
+.calculator-intro .eyebrow { margin-bottom: 8px; }
+.calculator-intro h1 { margin: 0; color: #101827; font-size: clamp(38px, 5vw, 50px); line-height: 1; letter-spacing: -.045em; }
+.intro-subtitle { margin: 9px 0 0; color: var(--muted); font-size: 15px; line-height: 1.45; }
+.intro-instructions { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+.intro-instructions span { display: block; }
 
 .calculator { display: flex; flex-direction: column; gap: 14px; }
 .step-card { overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--paper); box-shadow: 0 8px 30px rgba(23,32,51,.04); }
@@ -100,12 +98,10 @@ footer a { justify-self: end; color: var(--accent); font-weight: 800; text-decor
 @media (max-width: 940px) {
   .top-actions, .page-shell { width: min(100% - 24px, 1040px); }
   .top-actions { padding-top: 16px; }
-  .page-shell { padding-top: 16px; }
-  .intro-brand { align-self: center; gap: 12px; }
-  .brand-icon { width: 92px; }
-  .brand-wordmark { width: 170px; }
-  .calculator-intro { align-items: center; flex-direction: column; gap: 20px; padding-bottom: 24px; }
-  .calculator-intro p { max-width: none; text-align: center; }
+  .page-shell { padding-top: 10px; }
+  .calculator-intro { gap: 16px; padding-bottom: 24px; }
+  .calculator-intro h1 { font-size: 38px; }
+  .intro-subtitle { font-size: 14px; }
   .step-copy { padding: 20px 18px 16px; }
   .step-copy h2 { font-size: 19px; }
   .step-body { grid-template-columns: 1fr; min-height: 0; }

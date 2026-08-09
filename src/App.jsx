@@ -189,12 +189,12 @@ function App() {
 
       <div className="page-shell">
         <section className="calculator-intro">
-          <div className="intro-brand">
-            <h1 className="sr-only">Spoke length calculator</h1>
-            <img className="brand-wordmark" src="/assets/brand-wordmark.png" alt="Spoke Calculator" />
-            <img className="brand-icon" src="/assets/brand-hub.png" alt="" />
+          <div className="intro-copy">
+            <span className="eyebrow">Wheel building tool</span>
+            <h1>Spoke Calculator</h1>
+            <p className="intro-subtitle">Professional bicycle spoke length calculator</p>
           </div>
-          <p>
+          <p className="intro-instructions">
             <span>Enter your rim and hub measurements.</span>
             <span>All dimensions are in millimetres.</span>
           </p>
