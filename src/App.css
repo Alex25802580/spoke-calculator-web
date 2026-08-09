@@ -15,6 +15,7 @@
 .calculator-intro .eyebrow { margin-bottom: 7px; }
 .calculator-intro h1 { margin: 0; color: #101827; font-size: clamp(30px, 4vw, 42px); line-height: 1.05; letter-spacing: -.04em; }
 .calculator-intro p { max-width: 400px; margin: 0 0 2px; color: var(--muted); font-size: 14px; line-height: 1.55; text-align: right; }
+.calculator-intro p span { display: block; }
 
 .calculator { display: flex; flex-direction: column; gap: 14px; }
 .step-card { overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--paper); box-shadow: 0 8px 30px rgba(23,32,51,.04); }
@@ -22,11 +23,11 @@
 .step-number { display: grid; place-items: center; flex: 0 0 38px; height: 38px; border-radius: 11px; color: var(--accent); background: var(--soft); font-size: 12px; font-weight: 900; }
 .step-copy h2 { margin: 0; color: var(--ink); font-size: 22px; line-height: 1.15; letter-spacing: -.025em; }
 .step-copy p { margin: 5px 0 0; color: var(--muted); font-size: 14px; line-height: 1.45; }
-.step-body { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(290px, .82fr); align-items: center; min-height: 285px; }
+.step-body { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(290px, .82fr); align-items: center; min-height: 285px; background: #ffffff; }
 .step-body--fields-only { display: block; min-height: 0; }
 .step-card--compact .step-copy { border-bottom: 0; padding-bottom: 12px; }
 .step-card--compact .step-fields { width: min(100%, 470px); padding-top: 0; }
-.diagram-frame { align-self: stretch; min-width: 0; min-height: 285px; margin: 0; padding: 34px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #edf0f4; background: #ffffff; }
+.diagram-frame { align-self: stretch; min-width: 0; min-height: 285px; margin: 0; padding: 34px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #edf0f4; background: #ffffff; background-image: none; }
 .diagram-frame img { display: block; width: min(92%, 680px); height: auto; max-height: 235px; object-fit: contain; object-position: center; filter: drop-shadow(0 8px 13px rgba(23,32,51,.08)); }
 .step-fields { width: 100%; padding: 28px; }
 
