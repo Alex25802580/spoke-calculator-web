@@ -2,8 +2,8 @@
 
 .site-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid rgba(223,228,235,.9); background: rgba(255,255,255,.92); backdrop-filter: blur(14px); }
 .header-inner { position: relative; width: min(1120px, calc(100% - 40px)); height: 112px; margin: auto; display: flex; align-items: center; justify-content: flex-end; gap: 24px; }
-.brand-lockup { position: absolute; left: 50%; top: 50%; display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 0; transform: translate(-50%, -50%); }
-.brand-icon { display: block; width: 68px; height: auto; object-fit: contain; }
+.brand-lockup { position: absolute; left: 50%; top: 50%; display: flex; flex-direction: column; align-items: center; gap: 10px; min-width: 0; transform: translate(-50%, -50%); }
+.brand-icon { display: block; width: 68px; height: auto; object-fit: contain; filter: brightness(0); }
 .brand-wordmark { display: block; width: 118px; height: auto; object-fit: contain; }
 .saved-trigger { display: flex; align-items: center; gap: 12px; min-height: 42px; padding: 7px 8px 7px 16px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: var(--paper); font-weight: 700; cursor: pointer; }
 .saved-trigger strong { display: grid; place-items: center; min-width: 28px; height: 28px; padding: 0 7px; border-radius: 99px; color: white; background: var(--accent); font-size: 13px; }
@@ -100,7 +100,7 @@ footer a { justify-self: end; color: var(--accent); font-weight: 800; text-decor
 @media (max-width: 940px) {
   .header-inner, .page-shell { width: min(100% - 24px, 1040px); }
   .header-inner { height: 100px; }
-  .brand-lockup { gap: 2px; }
+  .brand-lockup { gap: 8px; }
   .brand-icon { width: 58px; height: auto; }
   .brand-wordmark { width: 101px; height: auto; }
   .saved-trigger span { display: none; }
