@@ -183,8 +183,9 @@ function App() {
       <header className="site-header">
         <div className="header-inner">
           <div className="brand-lockup">
-            <img className="brand-icon" src="/assets/logoo.png" alt="" />
-            <img className="brand-wordmark" src="/assets/letras.png" alt="Spoke Calculator" />
+            <img className="brand-icon" src="/assets/brand-hub.png" alt="" />
+            <span className="brand-divider" aria-hidden="true" />
+            <img className="brand-wordmark" src="/assets/brand-wordmark.png" alt="Spoke Calculator" />
           </div>
           <button className="saved-trigger" type="button" onClick={() => setShowSaved(true)}>
             <span>Saved wheels</span>
@@ -194,20 +195,13 @@ function App() {
       </header>
 
       <div className="page-shell">
-        <section className="intro">
+        <section className="calculator-intro">
           <div>
-            <span className="eyebrow">Professional wheel building tool</span>
-            <h1>Measure carefully.<br />Build confidently.</h1>
+            <span className="eyebrow">Wheel building calculator</span>
+            <h1>Spoke length calculator</h1>
           </div>
-          <p>
-            Calculate precise left and right spoke lengths using your rim and hub measurements.
-            All dimensions are in millimetres.
-          </p>
+          <p>Enter your rim and hub measurements. All dimensions are in millimetres.</p>
         </section>
-
-        <div className="workflow-strip" aria-label="Calculation steps">
-          <span>Rim</span><i /> <span>Hub</span><i /> <span>Lacing</span><i /> <span>Result</span>
-        </div>
 
         <form className="calculator" onSubmit={handleCalculate} noValidate>
           <StepCard number={1} title="Wheel format" subtitle="Choose the drilling of your rim and hub" compact>
