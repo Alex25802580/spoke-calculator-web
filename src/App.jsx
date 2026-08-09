@@ -217,11 +217,11 @@ function App() {
             </label>
           </StepCard>
 
-          <StepCard number={2} title="Effective Rim Diameter" subtitle="Measure where the spoke nipples sit inside the rim" image="/assets/diagram-erd.svg" imageAlt="Effective Rim Diameter measurement diagram">
+          <StepCard number={2} title="Effective Rim Diameter" subtitle="Measure where the spoke nipples sit inside the rim" image="/assets/what-is-erd.png" imageAlt="Effective Rim Diameter measurement diagram">
             <MeasurementInput label="ERD" hint="Rim" value={form.erd} onChange={(value) => updateField('erd', value)} placeholder="e.g. 600" />
           </StepCard>
 
-          <StepCard number={3} title="Rim offset" subtitle="Use 0 mm for a symmetric rim" image="/assets/diagram-offset.svg" imageAlt="Symmetric and asymmetric rim offset diagram">
+          <StepCard number={3} title="Rim offset" subtitle="Use 0 mm for a symmetric rim" image="/assets/imagenOffset.png" imageAlt="Symmetric and asymmetric rim offset diagram">
             <MeasurementInput label="Offset" hint="Rim" value={form.rimOffset} onChange={(value) => updateField('rimOffset', value)} placeholder="e.g. 2.5" />
             <fieldset className="direction-fieldset">
               <legend>Rim is offset toward</legend>
@@ -232,14 +232,14 @@ function App() {
             </fieldset>
           </StepCard>
 
-          <StepCard number={4} title="Flange diameter" subtitle="Pitch Circle Diameter for each side of the hub" image="/assets/diagram-hub.svg" imageAlt="Hub diagram showing PCD and flange distances">
+          <StepCard number={4} title="Flange diameter" subtitle="Pitch Circle Diameter for each side of the hub" image="/assets/PDC.png" imageAlt="Hub diagram showing PCD and flange distances">
             <div className="field-pair">
               <MeasurementInput label="PCD Left" hint="Non-drive" value={form.leftPcd} onChange={(value) => updateField('leftPcd', value)} placeholder="Left" />
               <MeasurementInput label="PCD Right" hint="Drive" value={form.rightPcd} onChange={(value) => updateField('rightPcd', value)} placeholder="Right" />
             </div>
           </StepCard>
 
-          <StepCard number={5} title="Flange position" subtitle="Distance from the hub centre to each flange" image="/assets/diagram-hub.svg" imageAlt="Hub diagram showing WL and WR distances">
+          <StepCard number={5} title="Flange position" subtitle="Distance from the hub centre to each flange" image="/assets/PDC.png" imageAlt="Hub diagram showing WL and WR distances">
             <div className="field-pair">
               <MeasurementInput label="WL" hint="Non-drive" value={form.leftFlangeDistance} onChange={(value) => updateField('leftFlangeDistance', value)} placeholder="Left" />
               <MeasurementInput label="WR" hint="Drive" value={form.rightFlangeDistance} onChange={(value) => updateField('rightFlangeDistance', value)} placeholder="Right" />
