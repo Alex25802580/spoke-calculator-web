@@ -183,9 +183,8 @@ function App() {
       <header className="site-header">
         <div className="header-inner">
           <div className="brand-lockup">
-            <img className="brand-icon" src="/assets/brand-hub.png" alt="" />
-            <span className="brand-divider" aria-hidden="true" />
             <img className="brand-wordmark" src="/assets/brand-wordmark.png" alt="Spoke Calculator" />
+            <img className="brand-icon" src="/assets/brand-hub.png" alt="" />
           </div>
           <button className="saved-trigger" type="button" onClick={() => setShowSaved(true)}>
             <span>Saved wheels</span>
