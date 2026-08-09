@@ -200,7 +200,11 @@ function App() {
             <span className="eyebrow">Wheel building calculator</span>
             <h1>Spoke length calculator</h1>
           </div>
-          <p>Enter your rim and hub measurements. All dimensions are in millimetres.</p>
+          <p>
+            Enter your rim and hub measurements.
+            <br />
+            All dimensions are in millimetres.
+          </p>
         </section>
 
         <form className="calculator" onSubmit={handleCalculate} noValidate>
