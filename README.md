@@ -1,16 +1,48 @@
-# React + Vite
+# Spoke Calculator Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Versión web de Spoke Calculator, una herramienta para calcular la longitud de los radios de una rueda de bicicleta a partir de las medidas de la llanta y el buje.
 
-Currently, two official plugins are available:
+La aplicación Android original está publicada en Google Play con más de 1.000 descargas. Esta versión web reutiliza la misma lógica matemática y mantiene su identidad visual, adaptando el flujo a una calculadora de una sola página.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- cálculo independiente de radio izquierdo y derecho;
+- ERD, PCD, WL/WR y rim offset;
+- dirección del offset para llantas asimétricas;
+- radiado radial y hasta 3 cruces;
+- soporte para punto y coma decimal;
+- validación de medidas;
+- ruedas guardadas en `localStorage`;
+- diseño responsive para móvil y escritorio;
+- mismos gráficos y logotipo que la aplicación Android.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- CSS
+- Node.js Test Runner
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Desarrollo
+
+```bash
+npm install
+npm run dev
+```
+
+Tests:
+
+```bash
+npm test
+```
+
+Build de producción:
+
+```bash
+npm run build
+```
+
+## Autor
+
+Alejandro Cifuentes
