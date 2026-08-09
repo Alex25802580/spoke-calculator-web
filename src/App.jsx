@@ -283,7 +283,7 @@ function App() {
           </section>
         ) : null}
 
-        <footer><span>Spoke Calculator</span><p>Accurate wheel building, from workshop to web.</p><a href="https://play.google.com/store/apps/details?id=com.alejandrocifuentes.calculadoraderadios" target="_blank" rel="noreferrer">Get the Android app ↗</a></footer>
+        <footer><span>Spoke Calculator</span><a href="https://play.google.com/store/apps/details?id=com.alejandrocifuentes.calculadoraderadios" target="_blank" rel="noreferrer">Get the Android app ↗</a></footer>
       </div>
 
       {showSaved ? (
