@@ -278,6 +278,55 @@ function App() {
           </section>
         ) : null}
 
+        <section className="seo-guide" aria-labelledby="spoke-guide-title">
+          <div className="guide-heading">
+            <span className="eyebrow">Wheel building guide</span>
+            <h2 id="spoke-guide-title">How to calculate bicycle spoke length</h2>
+            <p>
+              Accurate spoke length depends on the geometry of the rim, hub and lacing pattern.
+              Measure every component in millimetres and calculate the left and right sides independently.
+            </p>
+          </div>
+
+          <div className="guide-grid">
+            <article>
+              <span>01</span>
+              <h3>Measure the rim</h3>
+              <p>Use the Effective Rim Diameter (ERD) at the point where the spoke nipples sit. Add rim offset when the spoke bed is asymmetric.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Measure the hub</h3>
+              <p>Record the left and right Pitch Circle Diameter (PCD) and the distance from the hub centre to each flange.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Choose the lacing</h3>
+              <p>Select the total number of spoke holes and how many times each spoke crosses another before reaching the rim.</p>
+            </article>
+          </div>
+
+          <div className="faq-block">
+            <h2>Spoke calculator questions</h2>
+            <details>
+              <summary>What is ERD on a bicycle rim?</summary>
+              <p>ERD is the Effective Rim Diameter: the diameter measured where the ends of correctly fitted spokes sit inside their nipples.</p>
+            </details>
+            <details>
+              <summary>Why are left and right spoke lengths different?</summary>
+              <p>Rear hubs and disc-brake hubs often have different flange positions on each side. Rim offset can also change the required length.</p>
+            </details>
+            <details>
+              <summary>Does rim offset affect spoke length?</summary>
+              <p>Yes. An asymmetric spoke bed changes the effective distance from the rim to each hub flange, so the offset direction must be entered correctly.</p>
+            </details>
+            <details>
+              <summary>Can I enter decimal measurements with a comma?</summary>
+              <p>Yes. The calculator accepts both decimal commas and decimal points, for example 35,5 and 35.5.</p>
+            </details>
+          </div>
+        </section>
+
         <footer><span>Spoke Calculator</span><a href="https://play.google.com/store/apps/details?id=com.alejandrocifuentes.calculadoraderadios" target="_blank" rel="noreferrer">Get the Android app ↗</a></footer>
       </div>
 
