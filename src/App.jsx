@@ -201,9 +201,8 @@ function App() {
             <h1>Spoke length calculator</h1>
           </div>
           <p>
-            Enter your rim and hub measurements.
-            <br />
-            All dimensions are in millimetres.
+            <span>Enter your rim and hub measurements.</span>
+            <span>All dimensions are in millimetres.</span>
           </p>
         </section>
 
